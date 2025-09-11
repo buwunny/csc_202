@@ -13,7 +13,8 @@
 //    This project runs on the LP_MSPM0G3507 LaunchPad board interfacing to
 //    the CSC202 Expansion board.
 //
-//    This code tests the MSPM0G3507 microcontroller
+//    This code tests a basic struct and a union, displaying the data and sizes 
+//    of the values of each.
 //
 //*****************************************************************************
 //*****************************************************************************
@@ -83,7 +84,7 @@ int main(void)
   union_32    union_var;
 
   // Initialize long integer
-  union_var.LA = 0x12345678;
+  union_var.LA = 0x1234ABCD;
 
   // Configure the LaunchPad board
   clock_init_40mhz();
