@@ -3,7 +3,7 @@
    <banner>TI ARM Clang Linker Unix v4.0.0.LTS</banner>
    <copyright>Copyright (c) 1996-2018 Texas Instruments Incorporated</copyright>
    <command_line>/home/bunny/ti/ccstheia151/ccs/tools/compiler/ti-cgt-armllvm_4.0.0.LTS/bin/tiarmlnk -I/home/bunny/ti/ccstheia151/ccs/tools/compiler/ti-cgt-armllvm_4.0.0.LTS/lib -o lab3_part1.out -mlab3_part1.map --heap_size=0x800 --stack_size=512 -i/home/bunny/ti/mspm0_sdk_2_06_00_05/source -i/home/bunny/repos/CSC202_Workspace/lab3_part1 -i/home/bunny/repos/CSC202_Workspace/lab3_part1/Debug/syscfg -i/home/bunny/ti/ccstheia151/ccs/tools/compiler/ti-cgt-armllvm_4.0.0.LTS/lib --diag_wrap=off --display_error_number --warn_sections --xml_link_info=lab3_part1_linkInfo.xml --rom_model ./LaunchPad.o ./adc.o ./clock.o ./lab3p1_main.o ./lcd1602.o ./spi.o ./uart.o ./ticlang/startup_mspm0g3507_ticlang.o ../mspm0g3507.cmd -llibc.a --start-group -llibc++.a -llibc++abi.a -llibc.a -llibsys.a -llibsysbm.a -llibclang_rt.builtins.a -llibclang_rt.profile.a --end-group --cg_opt_level=0</command_line>
-   <link_time>0x68cc15a1</link_time>
+   <link_time>0x68cc5b41</link_time>
    <link_errors>0x0</link_errors>
    <output_file>/home/bunny/repos/CSC202_Workspace/lab3_part1/Debug/lab3_part1.out</output_file>
    <entry_point>

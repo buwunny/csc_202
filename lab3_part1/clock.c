@@ -213,6 +213,9 @@ void clock_init_40mhz(void)
   // update the bus clock frequency
   g_bus_clock_freq = 40000000;
 
+  msec_delay(500);
+
+
 } /* clock_init_40mhz */
 
 
