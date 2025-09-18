@@ -31,6 +31,24 @@
                 "name": "Default_Project",
                 "resourceId": "/Default_Project/adc.c"
             }
+        },
+        {
+            "name": "lab3_part1",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "lab3_part1",
+                "resourceId": "/lab3_part1"
+            }
+        },
+        {
+            "name": "lab3_part2",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "lab3_part2",
+                "resourceId": "/lab3_part2"
+            }
         }
     ]
 }
