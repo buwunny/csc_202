@@ -373,7 +373,7 @@ uint16_t clear_bit(uint16_t reg_value, uint16_t bit_mask)
 // -----------------------------------------------------------------------------
 bool check_bit(uint16_t reg_value, uint16_t bit_mask)
 {
-  return reg_value & bit_mask;
+  return (reg_value & bit_mask) == bit_mask;
 }
 
 
