@@ -49,6 +49,15 @@
                 "name": "lab3_part2",
                 "resourceId": "/lab3_part2"
             }
+        },
+        {
+            "name": "lab4",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "lab4",
+                "resourceId": "/lab4"
+            }
         }
     ]
 }
