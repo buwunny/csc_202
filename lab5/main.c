@@ -72,9 +72,6 @@ typedef enum
   DISPLAY
 } fsm_state_t;
 
-typedef unsigned short uint16;
-
-
 int main(void)
 {
   // Configure the LaunchPad board
@@ -269,7 +266,7 @@ void run_lab5_part2(void)
           high_nibble = dipsw_read() << 4;
           current_state = DISPLAY;
           
-          // // combine data
+          // combine data
           full_byte = high_nibble | low_nibble;
           
           debounce_lpsw2();
