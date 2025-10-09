@@ -55,7 +55,8 @@ void run_lab6_part4(void);
 //-----------------------------------------------------------------------------
 #define DEBOUNCE_DELAY                                                      (10)
 #define DEFAULT_KEY                                                       (0x10)
-
+#define ONE_SEC_DELAY                                                     (1000)
+#define PART3_DELAY                                                        (200)
 
 //-----------------------------------------------------------------------------
 // Define global variables and structures here.
@@ -204,7 +205,7 @@ void between_parts(char* string)
   debounce_pb(PB2_IDX);
   lcd_set_ddram_addr(LCD_LINE1_ADDR);
   lcd_write_string(string);
-  msec_delay(1000);
+  msec_delay(ONE_SEC_DELAY);
 } /* between_parts */
 
 
@@ -369,7 +370,7 @@ void run_lab6_part3(void)
       lcd_clear();
       done = true;
     } /* if */
-    msec_delay(200);
+    msec_delay(PART3_DELAY);
   } /* while */
 
   debounce_pb(PB2_IDX);
