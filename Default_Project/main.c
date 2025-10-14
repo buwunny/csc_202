@@ -58,8 +58,8 @@ int main(void)
   // enter your code here
 
  
- // Endless loop to prevent program from ending
- while (1);
+  // Endless loop to prevent program from ending
+  while (1);
 
 } /* main */
 
