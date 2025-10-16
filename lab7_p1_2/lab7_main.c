@@ -101,13 +101,13 @@ int main(void)
 
   run_lab7_part1();
 
-  // disable seven-segment after part 1
-  sys_tick_disable();
-  seg7_off();
-
   between_parts("Running Part 2");
 
   run_lab7_part2();
+
+  // disable seven-segment after part 2
+  sys_tick_disable();
+  seg7_off();
 
   // Endless loop to prevent program from ending
   while (1);
@@ -280,13 +280,13 @@ void run_lab7_part1(void)
       lcd_set_ddram_addr(addr);
       lcd_write_string(message);
       msec_delay(LCD_DELAY);
-      
     } /* for */
     
     // check if the character at the beginning of the adjusted string is a null
     // terminating character ('\n')
-    while ((message + offset++)[0] != '\0' && !done)
+    while (*(message + offset)!= '\0' && !done)
     {
+      offset++;
       done = is_pb_down(PB1_IDX);
       lcd_clear();
       lcd_set_ddram_addr(addr);
@@ -335,8 +335,7 @@ void run_lab7_part1(void)
 //  none
 //------------------------------------------------------------------------------
 void run_lab7_part2(void)
-{
-  
+{ 
   lcd_clear();
   leds_disable();
 
@@ -362,8 +361,9 @@ void run_lab7_part2(void)
     
     // check if the character at the beginning of the adjusted string is a null
     // terminating character ('\n')
-    while ((message + offset++)[0] != '\0' && !done)
+    while (*(message + offset) != '\0' && !done)
     {
+      offset++;
       done = is_pb_down(PB1_IDX);
       lcd_clear();
       lcd_set_ddram_addr(addr);
@@ -400,13 +400,9 @@ void lcd_write_string_window(char* string, uint8_t start_lcd_addr, uint8_t max_l
   uint8_t length = max_lcd_addr - start_lcd_addr;
   uint8_t counter = 0;
   // for each spot in the window, write a char of the string to the LCD module
-  while (counter <= length)
+  while (counter <= length && *(string + counter) != '\0')
   {
-    char char_to_write = string[counter];
-    if (char_to_write != '\0')
-    {
-      lcd_write_char(char_to_write);
-    } /* if */
+    lcd_write_char(*(string + counter));
     counter++;
   } /* while */
 } /* lcd_write_string */

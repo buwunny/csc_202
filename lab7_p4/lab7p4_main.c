@@ -87,7 +87,7 @@ int main(void)
 
 //------------------------------------------------------------------------------
 // DESCRIPTION:
-//  This function configures the interrupt for PB2 by setting the polarity to
+//  This function configures the interrupt for PB1 by setting the polarity to
 //  rising edge, clearing Interrupt Clear Register (ICLR) and setting the
 //  Interrupt Mask (IMASK). Finally the priority of the interrupt is set and the
 //  interrupt is enabled.
@@ -120,7 +120,7 @@ void config_pb1_interrupts(void)
 
 //------------------------------------------------------------------------------
 // DESCRIPTION:
-//  This function configures the interrupt for PB1 by setting the polarity to
+//  This function configures the interrupt for PB2 by setting the polarity to
 //  rising edge, clearing Interrupt Clear Register (ICLR) and setting the
 //  Interrupt Mask (IMASK). Finally the priority of the interrupt is set and the
 //  interrupt is enabled.
