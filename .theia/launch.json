@@ -130,6 +130,33 @@
                 "name": "lab8_p3",
                 "resourceId": "/lab8_p3"
             }
+        },
+        {
+            "name": "lab9",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "lab9",
+                "resourceId": "/lab9"
+            }
+        },
+        {
+            "name": "lab10_p1",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "lab10_p1",
+                "resourceId": "/lab10_p1"
+            }
+        },
+        {
+            "name": "lab10_p2",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "lab10_p2",
+                "resourceId": "/lab10_p2"
+            }
         }
     ]
 }
